@@ -37,7 +37,7 @@ while(i < 3):
         k = 0
         p = 0
         while(k < 3):
-            p = p+a[i][k]*b[k][j]
+            p = p+a[i][k]*c[k][j]
             k += 1
         f.append(p)
         j += 1

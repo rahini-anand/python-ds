@@ -1,42 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Pgm no :106
-Created on Mon Jul 18 16:22:27 2022
-Title: find the sum of two 3*3 matrix
+Pgm no :156
+Created on Mon Jul 25 00:12:55 2022
+Title: sum of two 3*3 matrix
 @author: rahini
 """
 a = []
-i = 0
-while(i < 3):
+for i in range(3):
     b = []
-    j = 0
-    while(j < 3):
+    for j in range(3):
         x = int(input('x='))
         b.append(x)
-        j += 1
     a.append(b)
-    i += 1
 c = []
-i = 0
-while(i < 3):
+for i in range(3):
     d = []
-    j = 0
-    while(j < 3):
+    for j in range(3):
         y = int(input('y='))
         d.append(y)
-        j += 1
     c.append(d)
-    i += 1
 e = []
-i = 0
-while(i < 3):
+for i in range(3):
     f = []
-    j = 0
-    while(j < 3):
+    for j in range(3):
         ad = a[i][j]+c[i][j]
         f.append(ad)
-        j += 1
     e.append(f)
-    i += 1
 print(e)

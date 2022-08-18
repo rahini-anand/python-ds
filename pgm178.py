@@ -21,10 +21,10 @@ print(a[0:n:2])
 # reverse the element
 print(a[::-1])
 # fist N elements from right
-print(a[:noe:-1])
+print(a[-1:-noe:-1])
 # all elements from mth position
-print(a[m:n:-1])
+print(a[-m:-n:-1])
 # N elements from mth position
-print(a[m:m+noe:-1])
+print(a[-m:-m-noe:-1])
 # alternate elements from right
 print(a[::-2])
