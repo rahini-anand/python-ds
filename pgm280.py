@@ -3,7 +3,7 @@
 """
 Pgm no :280
 Created on Fri Sep 30 12:19:57 2022
-Title: access two int nos using setter and 
+Title: access two int nos using setter and
 getter function and constructor
 @author: rahini
 """
@@ -27,9 +27,9 @@ class a2nos():
         self.__x = a
         self.__y = b
 
-    def reset(self):
-        self.__x = self.__x
-        self.__y = self.__y
+    def reset(self, a, b):
+        self.__x = a
+        self.__y = b
 
     def getx(self):
         return self.__x
@@ -45,7 +45,7 @@ class a2nos():
         print(self.__y)
 
 
-# OOT1
+'''# OOT1
 a = a2nos()
 a.disp()
 
@@ -66,3 +66,7 @@ a.setxy(110, 210)
 a.disp()
 d = a.getxy()
 print(d)
+
+a.reset()
+a.disp()
+'''
