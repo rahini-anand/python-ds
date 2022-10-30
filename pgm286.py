@@ -1,51 +1,51 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Pgm no :280
-Created on Fri Sep 30 12:19:57 2022
-Title: access two int nos using setter and
-getter function and constructor
+Pgm no :286
+Created on Fri Oct  7 12:39:34 2022
+Title: access of two nos using protected access
 @author: rahini
 """
 
 
-class a2nos():
-    __x: None
-    __y: None
+class a2nospro1():
+    _x: None
+    _y: None
 
     def __init__(self, a=10, b=20):
-        self.__x = a
-        self.__y = b
+        self._x = a
+        self._y = b
 
     def setx(self, a):
-        self.__x = a
+        self._x = a
 
     def sety(self, b):
-        self.__y = b
+        self._y = b
 
     def setxy(self, a, b):
-        self.__x = a
-        self.__y = b
+        self._x = a
+        self._y = b
 
     def reset(self, a, b):
-        self.__x = a
-        self.__y = b
+        self._x = a
+        self._y = b
 
     def getx(self):
-        return self.__x
+        return self._x
 
     def gety(self):
-        return self.__y
+        return self._y
 
     def getxy(self):
-        return self.__x, self.__y
+        return self._x, self._y
 
     def disp(self):
-        print(self.__x, self.__y)
+        print(self._x, self._y)
 
 
-'''# OOT1
-a = a2nos()
+'''
+# OOT1
+a = a2nospro1()
 a.disp()
 
 # OOT2
@@ -66,6 +66,6 @@ a.disp()
 d = a.getxy()
 print(d)
 
-a.reset()
+a.reset(1, 2)
 a.disp()
 '''
